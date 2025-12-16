@@ -1,10 +1,12 @@
-print('Primeiros 10 termos de uma PA')
-primeiro_termo = int(input('Primeiro termo: '))
-razao = int(input('Razão: '))
-decimo_termo = primeiro_termo + (10 - 1) * razao
-contador = 1
-
-while contador <= 10 :
-    print(decimo_termo, end=' -> ')
-    contador += 1
-print('Acabou')
+print('-=' * 10)
+print('Gerador de PA')
+print('-=' * 10)
+primeiro = int(input('Primeiro termo: '))
+razao = int(input('Razão da PA: '))
+termo = primeiro
+cont = 1
+while cont <= 10:
+    print(f'{termo} -> ', end='')
+    termo += razao
+    cont += 1
+print('FIM')
